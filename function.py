@@ -77,7 +77,7 @@ def div_decorator(func):
         if a < b:
             a,b=b,a
         return func(a,b)
-    return div
+    return wrapper
 
 @decorator
 def div(a,b):
